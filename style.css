@@ -1,0 +1,36 @@
+.everything{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    width: 100vw;
+    flex: 1;
+
+}
+
+
+.section1{
+    background: url(legend1.jpeg) no-repeat center center fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+
+}
+
+.subsection1{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction:row;
+    gap: 8px;
+}
+
+ul{
+    list-style-type: none;
+}
+
