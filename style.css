@@ -1,88 +1,78 @@
-.everything{
-    margin:0;
-    padding:0;
-    display:flex;
-    flex-direction:column;
-    height:100vh;
+/* Main Container */
+.everything {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     width: 100vw;
-    background: url('mooneye.jpg') ;
+    background: url('mooneye.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
-    
-
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
-
-.section1{
-    
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 12px;
-    
-    flex: 1;
-    flex-wrap: wrap;
-
-}
-
-.subsection1{
+/* General Styles for All Sections */
+.section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Ensures equal height for all sections */
+    padding: 16px;
+    box-sizing: border-box; /* Include padding and border in size */
+}
+
+/* Section 1 Specific Styles */
+.subsection1 {
+    display: flex;
     justify-content: space-between;
-    align-items:flex-start;
-    gap: 670px;
-    flex: 1;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.subsection2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; /* Reduced gap for better spacing */
     flex-wrap: wrap;
-    
-    
-    
 }
 
-.logo{
+.logo {
     font-size: 24px;
-
 }
 
-.cs1{
+.cs1 {
     font-size: 48px;
     font-weight: 800;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction:row;
-    gap: 20px;
-    font-size: 20px;
-    font-weight: 200;
-
+.cs2 {
+    font-size: 18px;
+    font-weight: 300;
 }
 
-.subsection2{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    gap: 300px;
-    flex: 1;
-    flex-wrap: wrap;
-   
-    
-
-}
-
-.subsection2 img{
+.subsection2 img {
     height: 150px;
-    width:300px;
+    width: 300px;
     border: 1px solid white;
     border-radius: 10px;
     object-fit: cover;
-    
 }
 
+/* Buttons */
 button {
     border: 2px ridge white;
     border-radius: 5px;
@@ -90,105 +80,71 @@ button {
     background-color: rgba(13, 26, 34, 0.589);
     color: white;
     font-weight: 200;
+    cursor: pointer;
 }
 
-
-
-
-
-.section2 {
-    background-color: rgba(17, 34, 34, 0.664);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:32px;
-    flex: 1;
-    flex-wrap: wrap;
-
-
+/* Section 2 Specific Styles */
+.section2{
+    background-color: rgb(8, 15, 13);
 }
-
-.section2 .text{
+.section2 .text {
     margin-bottom: 30px;
     font-size: 36px;
-    font-weight:800;
+    font-weight: 800;
 }
 
 .m-images {
     display: flex;
-    flex-direction: row;
     gap: 40px;
     flex-wrap: wrap;
-    
-    
 }
 
-.m-images p, a{
+.m-images p, .m-images a {
     text-decoration: none;
     color: white;
     font-weight: 200;
     font-style: italic;
 }
 
-.m-images img{
+.m-images img {
     border: 1px solid black;
     height: 150px;
-    width:180px;
+    width: 180px;
     border-radius: 18%;
     object-fit: cover;
 }
 
+/* Section 3 Specific Styles */
 .section3{
-    background-color:rgba(5, 15, 17, 0.61);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    flex-wrap: wrap;
-
+    background-color: rgba(22, 31, 31, 0.623);
 }
-
-.section3 .txt{
+.section3 .txt {
     font-size: 36px;
-    font-style:italic;
+    font-style: italic;
 }
 
-
-.section4{
-    display: flex;
-    background-color:rgba(0, 0, 0, 0.089);
-    justify-content: center;
-    align-items: center;
-    flex:1;
-    flex-wrap: wrap;
-}
-
+/* Section 4 Specific Styles */
 .sub41 {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
-    background-color:blueviolet;
+    align-items: center;
+    background-color: blueviolet;
     border: 1px solid black;
     border-radius: 3px;
     gap: 50px;
     width: 700px;
-    height: auto;
-    
+    padding: 15px;
+    box-sizing: border-box;
 }
 
+.su1 {
+    font-size: 26px;
+    font-weight: 300;
+}
 
-.section5{
+/* Section 5 (Footer) Specific Styles */
+.section5 {
     background-color: rgb(10, 22, 22);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0.2;
-    flex-wrap: wrap;
-
+    text-align: center;
+    font-size: 14px;
 }
-
-
-
-
