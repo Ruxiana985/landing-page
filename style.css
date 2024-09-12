@@ -5,95 +5,164 @@
     flex-direction:column;
     height:100vh;
     width: 100vw;
+    background: url('mooneye.jpg') ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color: white;
     
 
 }
 
 
 .section1{
-    background: url('legend1.jpeg') no-repeat center center fixed;
+    
     display:flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 12px;
+    
     flex: 1;
+    flex-wrap: wrap;
 
 }
 
 .subsection1{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items:center;
-    gap:50px;
+    align-items:flex-start;
+    gap: 670px;
+    flex: 1;
+    flex-wrap: wrap;
+    
+    
+    
 }
 
-.subsection2{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top: 30px;
-    gap:100px;
+.logo{
+    font-size: 24px;
+
 }
 
-
+.cs1{
+    font-size: 48px;
+    font-weight: 800;
+}
 
 ul{
     list-style-type: none;
     display: flex;
     flex-direction:row;
-    gap: 8px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.subsection2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap: 300px;
+    flex: 1;
+    flex-wrap: wrap;
+   
+    
+
+}
+
+.subsection2 img{
+    height: 150px;
+    width:300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+button {
+    border: 2px ridge white;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(13, 26, 34, 0.589);
+    color: white;
+    font-weight: 200;
 }
 
 
 
 
+
 .section2 {
-    background-color:aquamarine;
+    background-color: rgba(17, 34, 34, 0.664);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:32px;
     flex: 1;
+    flex-wrap: wrap;
 
 
 }
 
 .section2 .text{
     margin-bottom: 30px;
+    font-size: 36px;
+    font-weight:800;
 }
 
 .m-images {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    flex-wrap: wrap;
     
+    
+}
+
+.m-images p, a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .m-images img{
     border: 1px solid black;
-    height: 80px;
-    width:68px;
+    height: 150px;
+    width:180px;
     border-radius: 18%;
+    object-fit: cover;
 }
 
 .section3{
-    background-color: rgb(212, 145, 221);
+    background-color:rgba(5, 15, 17, 0.61);
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    flex-wrap: wrap;
 
+}
+
+.section3 .txt{
+    font-size: 36px;
+    font-style:italic;
 }
 
 
 .section4{
     display: flex;
-    background-color:pink;
+    background-color:rgba(0, 0, 0, 0.089);
     justify-content: center;
     align-items: center;
     flex:1;
+    flex-wrap: wrap;
 }
 
 .sub41 {
@@ -102,7 +171,7 @@ ul{
     align-items:center;
     background-color:blueviolet;
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 3px;
     gap: 50px;
     width: 700px;
     height: auto;
@@ -111,11 +180,12 @@ ul{
 
 
 .section5{
-    background: url('legend1.jpeg') no-repeat center center fixed;
+    background-color: rgb(10, 22, 22);
     display:flex;
     justify-content: center;
     align-items: center;
     flex: 0.2;
+    flex-wrap: wrap;
 
 }
 
